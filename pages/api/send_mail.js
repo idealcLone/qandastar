@@ -8,8 +8,6 @@ export default async function sendMail(req, res) {
     `https://www.google.com/recaptcha/api/siteverify?secret=6LeqWDoiAAAAAFMwo_LYAJDpKLv_I5sTLsQzzW7e&response=${token}`
   );
 
-  console.log(response);
-
   if (response.status === 200) {
     const { fullName, phoneNumber, email, region, message } = form;
     const transporter = await nodemailer.createTransport({

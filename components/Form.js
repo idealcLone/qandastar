@@ -35,11 +35,11 @@ export const Form = () => {
             message: "",
           });
           captchaRef.current?.reset();
-          alert("Ваше запрос обработан!");
+          alert("Сіздің өтінішіңіз жеткізілді!");
         })
         .catch((err) => console.log(err));
     } else {
-      alert("Пройдите CAPTCHA");
+      alert("CAPTCHA-ны өтініз.");
     }
   };
 
@@ -53,6 +53,7 @@ export const Form = () => {
           name="fullName"
           value={form.fullName}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor="email">Электрондық пошта жәшігі (email)</label>
         <input
@@ -63,10 +64,13 @@ export const Form = () => {
         />
         <label htmlFor="phoneNumber">Ұялы телефон номері (жауап үшін)</label>
         <input
-          type="text"
+          type="tel"
           name="phoneNumber"
+          pattern="7-[0-9]{3}-[0-9]{7}"
+          placeholder="7-777-1234567"
           value={form.phoneNumber}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor="region">Мемлекет, қала</label>
         <input
@@ -74,6 +78,7 @@ export const Form = () => {
           name="region"
           value={form.region}
           onChange={handleInputChange}
+          required
         />
         <label htmlFor="message">Хабарлама</label>
         <textarea

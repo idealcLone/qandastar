@@ -10,14 +10,14 @@
 
 .hero {
   padding: 50px 0;
-  min-height: calc(100vh);
+  min-height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background: radial-gradient(lightgrey, #0f2344) no-repeat;
+  background: radial-gradient(#4f5f78, #0f2344) no-repeat;
 }
 
 .container {
