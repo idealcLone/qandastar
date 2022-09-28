@@ -1,0 +1,19 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background-color: #fff;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.request {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-blue);
+}
