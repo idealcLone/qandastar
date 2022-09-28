@@ -23,21 +23,21 @@ export const Form = () => {
 
     const token = captchaRef.current?.getValue();
     console.log(token);
-    captchaRef.current?.reset();
 
-    // axios
-    //   .post("/api/send_mail", form)
-    //   .then(() => {
-    //     setForm({
-    //       fullName: "",
-    //       phoneNumber: "",
-    //       email: "",
-    //       region: "",
-    //       message: "",
-    //     });
-    //     alert("Ваше запрос обработан!");
-    //   })
-    //   .catch((err) => console.log(err));
+    axios
+      .post("/api/send_mail", { form, token })
+      .then(() => {
+        setForm({
+          fullName: "",
+          phoneNumber: "",
+          email: "",
+          region: "",
+          message: "",
+        });
+        captchaRef.current?.reset();
+        alert("Ваше запрос обработан!");
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
