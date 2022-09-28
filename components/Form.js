@@ -22,22 +22,25 @@ export const Form = () => {
     e.preventDefault();
 
     const token = captchaRef.current?.getValue();
-    console.log(token);
 
-    axios
-      .post("/api/send_mail", { form, token })
-      .then(() => {
-        setForm({
-          fullName: "",
-          phoneNumber: "",
-          email: "",
-          region: "",
-          message: "",
-        });
-        captchaRef.current?.reset();
-        alert("Ваше запрос обработан!");
-      })
-      .catch((err) => console.log(err));
+    if (token) {
+      axios
+        .post("/api/send_mail", { form, token })
+        .then(() => {
+          setForm({
+            fullName: "",
+            phoneNumber: "",
+            email: "",
+            region: "",
+            message: "",
+          });
+          captchaRef.current?.reset();
+          alert("Ваше запрос обработан!");
+        })
+        .catch((err) => console.log(err));
+    } else {
+      alert("Пройдите CAPTCHA");
+    }
   };
 
   return (
