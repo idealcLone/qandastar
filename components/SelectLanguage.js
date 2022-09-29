@@ -11,7 +11,7 @@ export const SelectLanguage = () => {
   return (
     <div className={styles.select}>
       <div onClick={toggleLanguageClick} className={styles.selected}>
-        {language === "kz" ? "ҚАЗ" : "РУС"}
+        {language === "ru" ? "ҚАЗ" : "РУС"}
       </div>
     </div>
   );

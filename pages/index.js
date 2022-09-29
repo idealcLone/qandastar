@@ -2,8 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { Form } from "../components/Form";
 import { QA } from "../components/QA";
+import { useTranslations } from "../hooks/useTranslations";
 
 export default function Home() {
+  const { t } = useTranslations();
   return (
     <>
       <Head>
@@ -21,26 +23,10 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <div className={styles.container}>
-            <h1>
-              Мобилизация – страшное дело. <br /> Поможем этническим казахам в
-              Российской Федерации переехать в Республику Казахстан
-            </h1>
+            <h1>{t("title")}</h1>
             <div className={styles.quote}>
-              <h2 className={styles.title}>Құрметті Ресейдегі қандастар!</h2>
-              <p className={styles.text}>
-                &quot;Соңғы күндері көрші елде орын алып жатқан жағдайлар бізге
-                де ауыр тиіп жатыр. Мобилизация деген сұмдық нәрсе ғой.. Әсіресе
-                Орынбор, Омбы, Астрахан өңірлеріндегі майданға жүздеген қазақ
-                бауырларымызды да алып кетіп жатыр екен. Жасын да, кәрісін де..
-                Обал-ай.. Кеткендердің көбісі аман келмейтіні анық қой..
-                <br />
-                Сондықтан біз жігіттермен келген әскер жасындағы қазақтарға
-                Астана, Атыраудағы жатақханалардан орын мен тамағын беріп,
-                көмектесейік деп шештік...
-                <br />
-                Осындай жағдайдағы бауырларымыз болса, өтініш
-                қалдырыңыздар.&quot;
-              </p>
+              <h2 className={styles.title}>{t("subtitle")}</h2>
+              <p className={styles.text}>&quot;{t("subtext")}&quot;</p>
               <h2 className={styles.author}>
                 <a
                   href="https://www.instagram.com/p/Ci9__ZHrzXb/"
