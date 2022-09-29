@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { Form } from "../components/Form";
 import Image from "next/image";
+import { QA } from "../components/QA";
 
 export default function Home() {
   return (
@@ -21,8 +22,12 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <div className={styles.container}>
-            <h1 className={styles.title}>Құрметті Ресейдегі қандастар!</h1>
-            <p>
+            <h1>
+              Мобилизация – страшное дело. <br /> Поможем этническим казахам в
+              Российской Федерации переехать в Республику Казахстан
+            </h1>
+            <h2 className={styles.title}>Құрметті Ресейдегі қандастар!</h2>
+            <p className={styles.text}>
               &quot;Соңғы күндері көрші елде орын алып жатқан жағдайлар бізге де
               ауыр тиіп жатыр. Мобилизация деген сұмдық нәрсе ғой.. Әсіресе
               Орынбор, Омбы, Астрахан өңірлеріндегі майданға жүздеген қазақ
@@ -35,9 +40,12 @@ export default function Home() {
               <br />
               Осындай жағдайдағы бауырларымыз болса, өтініш қалдырыңыздар.&quot;
             </p>
-            <h2 className={styles.author}>Айдын Рахимбаев</h2>
+            <h2 className={styles.author}>
+              <span>Айдын Рахимбаев</span>
+            </h2>
           </div>
         </div>
+        <QA />
         <Form />
       </main>
     </>
