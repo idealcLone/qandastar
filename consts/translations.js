@@ -11,7 +11,7 @@ export const TRANSLATIONS = [
   },
   {
     key: "email",
-    kz: "Электрондық пошта жәшігі (email)",
+    kz: "Электрондық пошта (email)",
     ru: "Электронная почта (email)",
   },
   {
@@ -106,6 +106,7 @@ export const TRANSLATIONS = [
   },
   {
     key: "build_happiness",
-    kz: "",
+    kz: "Бақытты бірге құрайық",
+    ru: "Построим счастье вместе",
   },
 ];

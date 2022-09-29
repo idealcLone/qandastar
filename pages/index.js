@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { Form } from "../components/Form";
-import Image from "next/image";
 import { QA } from "../components/QA";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
           rel="stylesheet"
         />
         <link rel="icon" href="/favicon.ico" />
@@ -41,7 +40,13 @@ export default function Home() {
               Осындай жағдайдағы бауырларымыз болса, өтініш қалдырыңыздар.&quot;
             </p>
             <h2 className={styles.author}>
-              <span>Айдын Рахимбаев</span>
+              <a
+                href="https://www.instagram.com/p/Ci9__ZHrzXb/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Айдын Рахимбаев
+              </a>
             </h2>
           </div>
         </div>

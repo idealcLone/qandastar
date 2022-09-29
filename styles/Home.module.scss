@@ -56,7 +56,8 @@
   text-align: right;
   text-transform: uppercase;
 
-  span {
+  a {
+    color: inherit;
     border-bottom: 3px solid currentColor;
   }
 }

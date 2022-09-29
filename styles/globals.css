@@ -2,10 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   scrollbar-width: none;
   scroll-behavior: smooth;
-
+  background-color: #fff;
 }
 
 a {
@@ -34,5 +34,5 @@ a {
 }
 
 :root {
-  --color-blue: #007bff;
+  --color-blue: #0f5293;
 }

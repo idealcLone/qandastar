@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6a03a6c-554b-4074-9bb9-ece9c8c043bc" name="Changes" comment="recaptcha added">
-      <change afterPath="$PROJECT_DIR$/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/QA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/SelectLanguage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consts/translations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contexts/LanguageContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useTranslations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/QA.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/SelectLanguage.module.scss" afterDir="false" />
+    <list default="true" id="b6a03a6c-554b-4074-9bb9-ece9c8c043bc" name="Changes" comment="Redesign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consts/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/consts/translations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Form.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Home.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/SelectLanguage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/SelectLanguage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,7 @@
       <workItem from="1664362439476" duration="1288000" />
       <workItem from="1664364312473" duration="5832000" />
       <workItem from="1664374299134" duration="3709000" />
-      <workItem from="1664421399053" duration="7456000" />
+      <workItem from="1664421399053" duration="9336000" />
     </task>
     <task id="LOCAL-00001" summary="redesign">
       <created>1664368290260</created>
@@ -127,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664377428308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Redesign">
+      <created>1664429481328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664429481328</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +147,8 @@
     <MESSAGE value="redesign" />
     <MESSAGE value="recaptcha test" />
     <MESSAGE value="recaptcha added" />
-    <option name="LAST_COMMIT_MESSAGE" value="recaptcha added" />
+    <MESSAGE value="Redesign" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
