@@ -94,7 +94,7 @@ export const Form = () => {
           ref={messageRef}
           name="message"
           cols="30"
-          rows="1"
+          rows="5"
           maxLength="1000"
           value={form.message}
           onChange={handleInputChange}

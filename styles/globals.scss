@@ -8,8 +8,20 @@ body {
   background-color: #fff;
 }
 
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 50%;
+  }
+}
+
 main {
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 a {

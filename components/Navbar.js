@@ -13,12 +13,12 @@ export const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div>
-        <Image src="/logo.svg" width={100} height={50} />
+        <img src="/logo.svg" alt="Logo Icon" className={styles.logo} />
         <div className={styles.right}>
-          <SelectLanguage />
           <div className={styles.request} onClick={handleRequestClick}>
             {t("make_request")}
           </div>
+          <SelectLanguage />
         </div>
       </div>
     </nav>

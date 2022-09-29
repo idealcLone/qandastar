@@ -4,23 +4,14 @@ import styles from "../styles/SelectLanguage.module.scss";
 export const SelectLanguage = () => {
   const { language, setLanguage } = useLanguageContext();
 
-  const handleLanguageClick = (lang) => {
-    setLanguage(lang);
+  const toggleLanguageClick = () => {
+    setLanguage(language === "ru" ? "kz" : "ru");
   };
 
   return (
     <div className={styles.select}>
-      <div
-        onClick={() => handleLanguageClick("kz")}
-        className={language === "kz" ? styles.selected : ""}
-      >
-        ҚАЗ
-      </div>
-      <div
-        onClick={() => handleLanguageClick("ru")}
-        className={language === "ru" ? styles.selected : ""}
-      >
-        РУС
+      <div onClick={toggleLanguageClick} className={styles.selected}>
+        {language === "kz" ? "ҚАЗ" : "РУС"}
       </div>
     </div>
   );

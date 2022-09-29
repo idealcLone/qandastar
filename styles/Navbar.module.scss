@@ -2,8 +2,9 @@
   position: sticky;
   top: 0;
   width: 100vw;
-  height: 60px;
+  height: 6rem;
   background-color: #fff;
+  z-index: 100000;
 
   > div {
     height: 100%;
@@ -12,19 +13,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2rem;
   }
 }
 
+.logo {
+  height: 4rem;
+}
+
 .request {
+  width: 20rem;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  color: var(--color-blue);
+  padding: .5rem 0;
+  text-align: center;
+  background-color: var(--color-blue);
+  color: #fff;
+  border-radius: 5px;
 }
 
 .right {
   display: flex;
-  gap: 20px;
+  gap: 4rem;
   align-items: center;
 }
