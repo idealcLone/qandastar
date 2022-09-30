@@ -23,7 +23,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.hero}>
           <div className={styles.container}>
-            <h1>{t("title")}</h1>
+            <h1>
+              {t("mobilization")}
+              <br />
+              {t("title")}
+            </h1>
             <div className={styles.quote}>
               <h2 className={styles.title}>{t("subtitle")}</h2>
               <p className={styles.text}>&quot;{t("subtext")}&quot;</p>
